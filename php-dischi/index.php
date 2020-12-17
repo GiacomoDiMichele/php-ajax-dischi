@@ -25,8 +25,8 @@
                         <p class="year">
                             <?php echo $singolo_album['year'] ?>
                         </p>
-                        <?php } ?>
                     </div>
+                    <?php } ?>
                 </div>
             </div>
         </main>
