@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.container::after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.lista_album {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.singolo_album {
+    width: 300px;
+    margin: 15px;
+    padding: 10px;
+}
+
+.singolo_album img {
+    width: 100%;
+}
