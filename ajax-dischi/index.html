@@ -3,23 +3,40 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
         <title></title>
     </head>
-    <body>
+    <body id="chiamata-ajax">
         <main>
-            <div class="container">
-                <div class="lista_album">
-                    <div class="singolo_album">
-                        
+            <div class="section-select">
+                <div class="container">
+                    <select id="select-genres">
+                        <option value="">genres</option>
+                    </select>
+                </div>
+            </div>
+            <div class="section-albums">
+                <div class="container">
+                    <div class="lista_album">
+                        <div class="singolo_album">
+                            <p>test</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
         <script id="album-template" type="text/x-handlebars-template">
+            <!--dati chiamata ajax che appenderò in singolo_album-->
             <div>
-                <!--dati chiamata ajax che appenderò in singolo_album-->
+                <div class="album-content">
+                    <img src="{{ poster }}" alt="">
+                    <p>{{ title }}</p>
+                    <p class="author">{{ author }}</p>
+                    <p class="year">{{ year }}</p>
+                </div>
             </div>
         </script>
-        <script src="main.js" charset="utf-8"></script>
+        <script src="/boolean/esercizi/php-ajax-dischi/ajax-dischi/main.js" charset="utf-8"></script>
     </body>
 </html>
