@@ -19,7 +19,7 @@ $(document).ready(function() {
                         'author': album[i].author,
                         'year': album[i].year
                     };
-                    var html = template(context);
+                    var html = template();
                     $('.singolo_album').append(html);
 
                     var current_genre = album[i].genre;

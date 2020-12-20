@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styledue.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
         <title></title>
@@ -18,24 +18,20 @@
             </div>
             <div class="section-albums">
                 <div class="container">
-                    <div class="lista_album">
-                        <div class="singolo_album">
-                            <p>test</p>
-                        </div>
+                    <div class="singolo_album">
+
                     </div>
                 </div>
             </div>
         </main>
         <script id="album-template" type="text/x-handlebars-template">
             <!--dati chiamata ajax che appenderò in singolo_album-->
-            <div>
                 <div class="album-content">
-                    <img src="{{ poster }}" alt="">
+                    <img src="{{ poster }}" alt="{{ title }}">
                     <p>{{ title }}</p>
                     <p class="author">{{ author }}</p>
                     <p class="year">{{ year }}</p>
                 </div>
-            </div>
         </script>
         <script src="/boolean/esercizi/php-ajax-dischi/ajax-dischi/main.js" charset="utf-8"></script>
     </body>

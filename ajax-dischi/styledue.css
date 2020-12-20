@@ -15,18 +15,19 @@
     content: '';
 }
 
-.lista_album {
+.singolo_album {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.singolo_album {
+.album-content {
     width: 300px;
     margin: 15px;
     padding: 10px;
 }
 
-.singolo_album img {
+.album-content img {
     width: 100%;
 }
